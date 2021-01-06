@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+  var appHeaderStyle = {
+    backgroundColor: "#282c34",
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    fontSize: "calc(10px + 2vmin)",
+    color: "white",
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div style={{textAlign: "center"}}>
+      <div style={appHeaderStyle}>
         <p>
             Hello Micropig！
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }
