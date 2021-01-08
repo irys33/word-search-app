@@ -1,4 +1,6 @@
 
+import WordTable from './wordTable';
+
 function App() {
   var appHeaderStyle = {
     backgroundColor: "#282c34",
@@ -16,6 +18,7 @@ function App() {
         <p>
             Hello Micropig！
         </p>
+        <WordTable name="TestProps" />
       </div>
     </div>
   );
