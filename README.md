@@ -1,6 +1,6 @@
 # word-search-api
 sinple-word-search-api  
-Python/fastAPI
+React/js
 
 # Getting Started with Create React App
 
