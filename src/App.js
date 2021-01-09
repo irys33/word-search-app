@@ -16,18 +16,20 @@ function App() {
     color: "white",
   }
   const [value, setValue] = React.useState('Word List');
+  const [table, setTable] = React.useState('Table');
 
   const handleChange = (event) => {
       setValue(event.target.value);
   };
-  
+
+
   return (
     <div style={{textAlign: "center"}}>
       <div style={appHeaderStyle}>
-        <WordTable name="TestProps" />
         <WordForm value={value} handleChange={handleChange} />
-        <p>{value}</p>
-        <Button variant="contained" onClick={() => { alert('未実装') }}>生成</Button>
+        <Button variant="contained" onClick={() => setTable(value)}>生成</Button>
+        {/* <Button variant="contained">生成</Button> */}
+        <WordTable tableList={table} />
       </div>
     </div>
   );

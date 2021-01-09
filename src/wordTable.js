@@ -1,6 +1,6 @@
 
 function WordTable(props) {
-    return <p>wordTable Component {props.name}</p>;
+    return <p>{props.tableList}</p>;
 }
 
 export default WordTable;
