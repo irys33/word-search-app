@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Button from '@material-ui/core/Button';
 
 import WordTable from './wordTable';
@@ -36,3 +36,5 @@ function App() {
 }
 
 export default App;
+
+// memo setValue({...array, props.newValue})　などで値をコピーした新しいオブジェクトを生成してstateに保存すると再描画されます。
