@@ -1,5 +1,6 @@
 
 import WordTable from './wordTable';
+import WordForm from './wordForm';
 
 function App() {
   var appHeaderStyle = {
@@ -19,6 +20,7 @@ function App() {
             Hello Micropig！
         </p>
         <WordTable name="TestProps" />
+        <WordForm value="DefaultValue" />
       </div>
     </div>
   );
