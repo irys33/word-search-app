@@ -13,12 +13,19 @@ function App() {
     fontSize: "calc(10px + 2vmin)",
     color: "white",
   }
+  const [value, setValue] = React.useState('Controlled');
+
+  const handleChange = (event) => {
+      setValue(event.target.value);
+  };
+  
   return (
     <div style={{textAlign: "center"}}>
       <div style={appHeaderStyle}>
         <WordTable name="TestProps" />
-        <WordForm value="DefaultValue" />
+        <WordForm value={value} handleChange={handleChange} />
       </div>
+      <p>{value}</p>
     </div>
   );
 }

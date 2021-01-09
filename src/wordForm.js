@@ -4,13 +4,6 @@ import TextField from '@material-ui/core/TextField';
 
 
 function WordForm(props) {
-    
-    const [value, setValue] = React.useState('Controlled');
-
-    const handleChange = (event) => {
-        setValue(event.target.value);
-    };
-    
     return (
       <div>
         <TextField
@@ -20,10 +13,9 @@ function WordForm(props) {
           rows={4}
           defaultValue="Default Value"
           variant="filled"
-          value={value}
-          onChange={handleChange}
+          value={props.value}
+          onChange={props.handleChange}
         />
-        <p>{value}</p>
       </div>
     );
 }
