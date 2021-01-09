@@ -1,12 +1,15 @@
 
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
 
 function WordForm(props) {
     
     const [value, setValue] = React.useState('Controlled');
+
+    const handleChange = (event) => {
+        setValue(event.target.value);
+    };
     
     return (
       <div>
@@ -16,8 +19,11 @@ function WordForm(props) {
           multiline
           rows={4}
           defaultValue="Default Value"
-          variant="outlined"
+          variant="filled"
+          value={value}
+          onChange={handleChange}
         />
+        <p>{value}</p>
       </div>
     );
 }
