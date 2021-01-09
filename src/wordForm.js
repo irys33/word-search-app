@@ -11,7 +11,6 @@ function WordForm(props) {
           label="Word List"
           multiline
           rows={4}
-          defaultValue="Default Value"
           variant="filled"
           value={props.value}
           onChange={props.handleChange}
