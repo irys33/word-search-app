@@ -16,9 +16,6 @@ function App() {
   return (
     <div style={{textAlign: "center"}}>
       <div style={appHeaderStyle}>
-        <p>
-            Hello Micropig！
-        </p>
         <WordTable name="TestProps" />
         <WordForm value="DefaultValue" />
       </div>
