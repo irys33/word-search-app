@@ -1,3 +1,5 @@
+import React from 'react';
+import Button from '@material-ui/core/Button';
 
 import WordTable from './wordTable';
 import WordForm from './wordForm';
@@ -13,7 +15,7 @@ function App() {
     fontSize: "calc(10px + 2vmin)",
     color: "white",
   }
-  const [value, setValue] = React.useState('Controlled');
+  const [value, setValue] = React.useState('Word List');
 
   const handleChange = (event) => {
       setValue(event.target.value);
@@ -24,8 +26,9 @@ function App() {
       <div style={appHeaderStyle}>
         <WordTable name="TestProps" />
         <WordForm value={value} handleChange={handleChange} />
+        <p>{value}</p>
+        <Button variant="contained" onClick={() => { alert('未実装') }}>生成</Button>
       </div>
-      <p>{value}</p>
     </div>
   );
 }
